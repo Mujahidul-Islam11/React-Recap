@@ -2,6 +2,8 @@
 Each single element in a web page can be a component.
 In every website we can see some common sections like - Header/Navbar, Hero/Banner, Footer
 We can create components for the each of the sections, we can work in different components separately.
+*note:- to call a component inside an another component we first need to export the component and
+to access it inside another component we need to import the component there.
 
 ## What are Props?
 Props (Properties) are the way to create a connection between parent and child components.
