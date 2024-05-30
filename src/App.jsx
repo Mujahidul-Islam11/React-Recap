@@ -1,4 +1,6 @@
-import Actor from './Actor'
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
+import Actor from './components/Actor'
 import './App.css'
 
 function App() {
