@@ -26,14 +26,18 @@ function App() {
       <Device name="RedMi" price="8000"></Device>
       <Student name="Dinar"></Student> */}
       <Actor Name={"Bappa Raz"} hello="Hello"></Actor>
+      <Person Name='Dinar' Age='18' Country='Bangladesh'></Person>
     </>
   )
 }
 
-function Person (){
+function Person (UserInfo){
+  const {Name, Age, Country} = UserInfo;
 return (
   <>
-  <h2>I am a person</h2>
+  <h3>Name: {Name}</h3>
+  <h3>Age: {Age}</h3>
+  <h3>Country: {Country}</h3>
   </>
 )
 }
