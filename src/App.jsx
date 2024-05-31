@@ -11,7 +11,7 @@ const [count, setCount] = useState(0);
     <h3>React core concepts 2</h3>
     <h2>Counter: {count}</h2>
     <button onClick={()=> setCount(count+1)}>Add</button>
-    <button onClick={()=> setCount(count-1)}>Reduce</button>
+    <button onClick={()=> count> 0 && setCount(count-1)}>Reduce</button>
     </>
   )
 }
