@@ -2,19 +2,16 @@
 /* eslint-disable no-unused-vars */
 import Actor from './components/Actor'
 import './App.css'
+import { useState } from 'react'
 
 function App() {
-const handleClick = () =>{
-  alert("Button clicked")
-}
-const handleClick2 = () =>{
-  alert("Button2 clicked")
-}
+const [count, setCount] = useState(0);
   return (
     <>
     <h3>React core concepts 2</h3>
-    <button onClick={handleClick}>Click me</button>
-    <button onClick={()=> handleClick2()}>Click me2</button>
+    <h2>Counter: {count}</h2>
+    <button onClick={()=> setCount(count+1)}>Add</button>
+    <button onClick={()=> setCount(count-1)}>Reduce</button>
     </>
   )
 }
