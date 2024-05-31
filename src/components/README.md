@@ -32,3 +32,13 @@ return (
   </>
 )
 }
+
+
+    <button onClick={handleClick}>Click me</button>
+    <button onClick={handleClick2()}>Click me2</button>
+    when we call a function like this, it directly calls it before clicking the button. Because when the compiler has seen that there is function named handleClick2 is called then it will run the all codes inside the function before clicking the button.
+    To prevent that action we can use, 
+
+    <button onClick={handleClick}>Click me</button>
+    <button onClick={() => handleClick2()}>Click me2</button> // anonymous function
+    You will also be able to pass argument now.
