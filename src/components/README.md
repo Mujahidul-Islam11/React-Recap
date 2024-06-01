@@ -42,3 +42,9 @@ return (
     <button onClick={handleClick}>Click me</button>
     <button onClick={() => handleClick2()}>Click me2</button> // anonymous function
     You will also be able to pass argument now.
+
+## UseState hook 
+useState hook is used for storing data and can change data when users interact with any feature.
+
+## UseEffect hook
+Event handlers contain side effects (they change program's state) caused by a specific user action (for example a button clicked or typing)
