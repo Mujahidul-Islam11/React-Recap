@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import { useEffect } from "react";
 import { useState } from "react";
 
-const Articles = () => {
+const Articles = ({handleBookmark}) => {
     const [articles, setArticles] = useState([]);
     useEffect(()=>{
         fetch("./../../public/article.json")
@@ -23,8 +24,8 @@ const Articles = () => {
                     </div>
                 </div>
                 <div className="flex items-center gap-4 text-gray-500">
-                    <h2>{article?.reading_time}</h2>
-                    <button className="text-xl cursor-pointer"><ion-icon name="bookmark-outline"></ion-icon></button>
+                    <h2>{article?.reading_time} min read</h2>
+                    <button onClick={()=> handleBookmark(article?.title, article?.reading_time)} className="text-xl cursor-pointer"><ion-icon name="bookmark-outline"></ion-icon></button>
                 </div>
             </div>
             <h1 className="text-3xl font-semibold my-4">{article?.title}</h1>

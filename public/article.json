@@ -6,7 +6,7 @@
     "author": "Alice Johnson",
     "author_img": "https://ps.w.org/user-avatar-reloaded/assets/icon-128x128.png?rev=2540745",
     "posted_date": "2024-05-20",
-    "reading_time": "8 min",
+    "reading_time": "8 ",
     "hashtags": ["#space", "#adventure", "#scifi"]
   },
   {
@@ -16,7 +16,7 @@
     "author": "Bob Smith",
     "author_img": "https://ps.w.org/user-avatar-reloaded/assets/icon-128x128.png?rev=2540745",
     "posted_date": "2024-04-15",
-    "reading_time": "5 min",
+    "reading_time": "5 ",
     "hashtags": ["#nature", "#mystery", "#fantasy"]
   },
   {
@@ -26,7 +26,7 @@
     "author": "Catherine Lee",
     "author_img": "https://ps.w.org/user-avatar-reloaded/assets/icon-128x128.png?rev=2540745",
     "posted_date": "2024-06-01",
-    "reading_time": "10 min",
+    "reading_time": "10 ",
     "hashtags": ["#cooking", "#food", "#recipes"]
   },
   {
@@ -36,7 +36,7 @@
     "author": "David Kumar",
     "author_img": "https://ps.w.org/user-avatar-reloaded/assets/icon-128x128.png?rev=2540745",
     "posted_date": "2024-03-22",
-    "reading_time": "7 min",
+    "reading_time": "7",
     "hashtags": ["#technology", "#trends", "#innovation"]
   },
   {
@@ -46,7 +46,7 @@
     "author": "Emma Wilson",
     "author_img": "https://ps.w.org/user-avatar-reloaded/assets/icon-128x128.png?rev=2540745",
     "posted_date": "2024-02-18",
-    "reading_time": "6 min",
+    "reading_time": "6 ",
     "hashtags": ["#mindfulness", "#meditation", "#wellness"]
   }
 ]
