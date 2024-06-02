@@ -10,8 +10,8 @@ function App() {
     <>
     <div className='w-[1100px] mx-auto'>
     <nav className='flex justify-between border-b py-4'>
-    <h3 className='text-4xl font-semibold'>Knowledge Cafe</h3>
-    <img className='w-12 h-12 rounded-full' src="./../public/profile.png" alt="" />
+    <h3 className='text-4xl font-semibold cursor-pointer'>Knowledge Cafe</h3>
+    <img className='w-12 h-12 rounded-full cursor-pointer' src="./../public/profile.png" alt="" />
     </nav>
     <div>
       <Articles></Articles>
