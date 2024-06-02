@@ -24,7 +24,7 @@ const Articles = () => {
                 </div>
                 <div className="flex items-center gap-4 text-gray-500">
                     <h2>{article?.reading_time}</h2>
-                    <h2 className="text-xl cursor-pointer"><ion-icon name="bookmark-outline"></ion-icon></h2>
+                    <button className="text-xl cursor-pointer"><ion-icon name="bookmark-outline"></ion-icon></button>
                 </div>
             </div>
             <h1 className="text-3xl font-semibold my-4">{article?.title}</h1>
