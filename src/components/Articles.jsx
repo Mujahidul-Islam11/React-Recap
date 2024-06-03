@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 
-const Articles = ({handleBookmark}) => {
+const Articles = ({handleBookmark, handleMarkAsRead}) => {
     const [articles, setArticles] = useState([]);
     useEffect(()=>{
         fetch("./../../public/article.json")
@@ -25,12 +25,12 @@ const Articles = ({handleBookmark}) => {
                 </div>
                 <div className="flex items-center gap-4 text-gray-500">
                     <h2>{article?.reading_time} min read</h2>
-                    <button onClick={()=> handleBookmark(article?.title, article?.reading_time)} className="text-xl cursor-pointer"><ion-icon name="bookmark-outline"></ion-icon></button>
+                    <button onClick={()=> handleBookmark(article)} className="text-xl cursor-pointer"><ion-icon name="bookmark-outline"></ion-icon></button>
                 </div>
             </div>
             <h1 className="text-3xl font-semibold my-4">{article?.title}</h1>
             <p className="text-gray-500">{article?.hashtags}</p>
-            <button className="underline text-blue-700 mt-4">Mark as read</button>
+            <button onClick={()=> handleMarkAsRead(article?.reading_time)} className="underline text-blue-700 mt-4">Mark as read</button>
             </div>)
            } 
         </div>
