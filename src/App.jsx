@@ -13,10 +13,15 @@ function App() {
     const bookmark = [...bookmarks, article];
     setBookmarks(bookmark)
   }
-  const handleMarkAsRead = time =>{
+  const handleMarkAsRead = (time, id) =>{
     const readingTime = Number(time)
     setMarkAsRead(markAsRead+readingTime)
+    const remainingBookmarks = bookmarks?.filter(bookmark => bookmark.id !== id);
+    setBookmarks(remainingBookmarks);
   }
+  // when mark as read button is clicked update the bookmarks state, when the button is clicked
+  // the handler will run and sum numbers in the markAsRead state and will filter if the
+  // id that is clicked give me the other id's that are not matchable.
   return (
     <>
     <div className='md:w-[1100px] mx-auto'>

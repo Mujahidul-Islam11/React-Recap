@@ -30,7 +30,7 @@ const Articles = ({handleBookmark, handleMarkAsRead}) => {
             </div>
             <h1 className="text-3xl font-semibold my-4">{article?.title}</h1>
             <p className="text-gray-500">{article?.hashtags}</p>
-            <button onClick={()=> handleMarkAsRead(article?.reading_time)} className="underline text-blue-700 mt-4">Mark as read</button>
+            <button onClick={()=> handleMarkAsRead(article?.reading_time, article?.id)} className="underline text-blue-700 mt-4">Mark as read</button>
             </div>)
            } 
         </div>
