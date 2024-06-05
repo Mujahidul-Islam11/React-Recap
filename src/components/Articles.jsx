@@ -5,7 +5,7 @@ import { useState } from "react";
 const Articles = ({handleBookmark, handleMarkAsRead}) => {
     const [articles, setArticles] = useState([]);
     useEffect(()=>{
-        fetch("./../../public/article.json")
+        fetch("/article.json")
         .then(res => res.json())
         .then(data => setArticles(data))
     }, [])

@@ -16,7 +16,8 @@ function App() {
   const handleMarkAsRead = (time, id) =>{
     const readingTime = Number(time)
     setMarkAsRead(markAsRead+readingTime)
-    const remainingBookmarks = bookmarks?.filter(bookmark => bookmark.id !== id);
+    const remainingBookmarks = bookmarks?.filter(bookmark => bookmark.id !== id); 
+    //filter process:- jei id gula same nah ogula daw
     setBookmarks(remainingBookmarks);
   }
   // when mark as read button is clicked update the bookmarks state, when the button is clicked
