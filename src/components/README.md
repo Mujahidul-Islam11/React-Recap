@@ -48,3 +48,27 @@ useState hook is used for storing data and can change data when users interact w
 
 ## UseEffect hook
 Event handlers contain side effects (they change program's state) caused by a specific user action (for example a button clicked or typing)
+
+
+## Prerequisites
+- ES5 VS ES6
+- Array, Objects & Functions
+- Array methods (map, filter, reduce, find, find Index )
+- Destructuring
+- Rest & Spread Operator
+- try catch
+- async await
+- promises
+- what is react? how does it works?
+- real DOM Vs Virtual DOM 
+- How does JSX works?
+- React components, what is lifecycle in components & props?
+- What is react State?
+- React event handling
+- React Conditional rendering
+- Lifting state up
+- React Higher Order Components (HOC)
+- What are react hooks?
+- React router & private route
+- React data fetching, axios swr & tanstack query 
+- More way to handle state like redux
