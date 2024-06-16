@@ -1,40 +1,3 @@
-# React Component Lifecycle method
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import './App.css'
-
-class Timer extends React.Component{
-  constructor(props){
-    super(props)
-    this.state={date: new Date()}
-  }
-  componentDidMount(){
-    this.time = setInterval(() => {
-      this.setState({date: new Date()})
-    }, 1000);
-  }
-  componentWillUnmount(){
-    clearInterval(this.time)
-  }
-  render() {
-    return (
-      <div>
-        Hello {new Date().toLocaleTimeString(this.props.local)}
-      </div>
-    )
-  }
-}
-
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Timer local="bn-BD"/>
-  </React.StrictMode>,
-)
-
-
 
 <h2> Prerequisites </h2>
 <ul>
@@ -75,4 +38,43 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 <li> React component lifecycle is the sequence of the process of component creating, updating, & mounting. In this sequence different lifecycle methods are used, like:- Initialization, Mounting, Updating, Unmounting, Error Handling. The Mounting phase begins when a component is first created & inserted in the DOM. Updating phase occurs when a component's state or props changes. And the Unmounting phase begins when a component is removed from the DOM. Mounting phase hasa three main lifecycle methods. First is constructor() method, it is called when the component is first created. Second is render() method, the render() method is responsible for generating the component's virtual DOM representation based on its current props and state. It is called every time the component needs to be re-rendered, either because its props or state have changed, or because a parent component has been re-rendered.</li>
 
-<li> By using react hooks we can manage functional component's states, also can do lifecycle method work by using hooks without writing any code for creating component lifecycle. It means by using hooks we can implement any kind of functionality without the class based component. React hook was released in february 16 2019, by using react hook we can manage state by writing just few lines of code. But before the hooks, we had to handle everything with class component, we had to manage lifecycle method as well to push a component inside the DOM. </li> <ol>
+<li> By using react hooks we can manage functional component's states, also can do lifecycle method work by using hooks without writing any code for creating component lifecycle. It means by using hooks we can implement any kind of functionality without the class based component. React hook was released in february 16 2019, by using react hook we can manage state by writing just few lines of code. But before the hooks, we had to handle everything with class component, we had to manage lifecycle method as well to push a component inside the DOM. <br/>
+<b>React Component Lifecycle method:-</b>
+<br/>
+import React from 'react' <br/>
+import ReactDOM from 'react-dom/client'<br/>
+import App from './App.jsx'<br/>
+import './index.css'<br/>
+import './App.css'<br/>
+<br/>
+class Timer extends React.Component{<br/>
+  constructor(props){<br/>
+    super(props)<br/>
+    this.state={date: new Date()}<br/>
+  }<br/>
+  componentDidMount(){<br/>
+    this.time = setInterval(() => {<br/>
+      this.setState({date: new Date()})<br/>
+    }, 1000);<br/>
+  }<br/>
+  componentWillUnmount(){<br/>
+    clearInterval(this.time)<br/>
+  }<br/>
+  render() {<br/>
+    return (<br/>
+      <div><br/>
+        Hello {new Date().toLocaleTimeString(this.props.local)}
+      </div><br/>
+    )
+  }
+}
+
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <Timer local="bn-BD"/>
+  </React.StrictMode>,
+)
+
+
+</li> <ol>
